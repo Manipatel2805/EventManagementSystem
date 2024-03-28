@@ -14,6 +14,9 @@ Usage : Give input by the user through the "Postman" with different http methods
 2.Get for Event Finder API.
 After completing the request methods check mysql database. So the given input is showed in table format.
 
+First API: Post http://localhost:3002/events/add
+Second API: Get http://localhost:3002/events/find?latitude=40.7128&longitude=-74.0060&date=2024-03-15&page=1
+
 First api is allows for the addition of events into your system using the details provided in the CSV database.
 Second Api is for return events occurring within the next 14 days from the specified date. So the finder would accept the user's latitude, longitude and a date.
 
@@ -23,3 +26,6 @@ Each event in the response should include the event name, city, date, weather, a
 Dependencies :express mysql axios dotenv nodemon.
 
 License This project is licensed under the MIT License - see the LICENSE file for details. Make sure to customize the content based on your specific project details.
+
+VIDEO FILE:
+[controller.js - EventManagement - Visual Studio Code 2024-03-28 19-11-12.zip](https://github.com/Manipatel2805/EventManagementSystem_By_Nodejs/files/14790490/controller.js.-.EventManagement.-.Visual.Studio.Code.2024-03-28.19-11-12.zip)
